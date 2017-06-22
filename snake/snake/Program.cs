@@ -10,23 +10,20 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            int x1 = 5;
-            int y1 = 6;
-            char sym1 = '*';
+            Point p1 = new Point();
+            p1.x = 10;
+            p1.y = 10;
+            p1.sym = '^';
+            p1.Draw_point();
 
-            Draw_point(x1, y1, sym1);
-
-            int x2 = 30;
-            int y2 = 30;
-            char sym2 = '^';
-            Draw_point(x2, y2, sym2);
+            Point p2 = new Point();
+            p2.x = 24;
+            p2.y = 40;
+            p2.sym = '^';
+            p2.Draw_point();
 
             Console.ReadLine();
         }
-        static void Draw_point(int x, int y, char sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write ( sym );
-        }
+
     }
 }
