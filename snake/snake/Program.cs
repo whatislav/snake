@@ -10,33 +10,23 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(10, 20, '^');
+            /*Point p1 = new Point(10, 20, '^');
             Point p2 = new Point(20, 10, '^');
             Point p3 = new Point(7, 22, '#');
             Point p4 = new Point(35, 5, '*');
-            Point p5 = new Point(56, 8, '%');
+            Point p5 = new Point(56, 8, '%');*/
 
-            List<Point> pointlist = new List<Point>();
-            pointlist.Add(p1);
-            pointlist.Add(p2);
-            pointlist.Add(p3);
-            pointlist.Add(p4);
-            pointlist.Add(p5);
+            Horizontalline line = new Horizontalline(17, 30, 6, '+');
+            line.DrowHorizon();
 
-            foreach (Point i in pointlist)
-            {
-                i.Draw_point();
-            }
+            Verticalline vertline = new Verticalline(7, 15, 17, '+');
+            vertline.DrowVertical();
 
-            List<char> charlist = new List<char>();
-            charlist.Add('%');
-            charlist.Add('c');
-            charlist.Add('[');
+            Horizontalline line2 = new Horizontalline(17, 30, 15, '+');
+            line2.DrowHorizon();
 
-            foreach(char i in charlist)
-            {
-                Console.Write(i);
-            }
+            Verticalline vertline2 = new Verticalline(7, 15, 30, '+');
+            vertline2.DrowVertical();
 
             Console.ReadLine();
         }
