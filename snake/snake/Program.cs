@@ -15,18 +15,21 @@ namespace snake
             Point p3 = new Point(7, 22, '#');
             Point p4 = new Point(35, 5, '*');
             Point p5 = new Point(56, 8, '%');*/
+            Console.SetWindowSize(1, 1);
+            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(80, 25);
 
-            Horizontalline line = new Horizontalline(17, 30, 6, '+');
-            line.DrowHorizon();
+            Horizontalline line = new Horizontalline(0, 78, 0, '+');
+            line.Drow();
 
-            Verticalline vertline = new Verticalline(7, 15, 17, '+');
-            vertline.DrowVertical();
+            Verticalline vertline = new Verticalline(0, 24, 0, '+');
+            vertline.Drow();
 
-            Horizontalline line2 = new Horizontalline(17, 30, 15, '+');
-            line2.DrowHorizon();
+            Horizontalline line2 = new Horizontalline(0, 78, 24, '+');
+            line2.Drow();
 
-            Verticalline vertline2 = new Verticalline(7, 15, 30, '+');
-            vertline2.DrowVertical();
+            Verticalline vertline2 = new Verticalline(0, 24, 78, '+');
+            vertline2.Drow();
 
             Console.ReadLine();
         }
